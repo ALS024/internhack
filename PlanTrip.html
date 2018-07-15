@@ -1,0 +1,89 @@
+<!doctype html>
+
+
+<html>
+<head>
+    <title>Interaction Test</title>
+    <link rel="stylesheet" type="text/css" href="flexible_boxlayout.css">
+</head>
+<body>
+    <div>
+        <img id="center" src="img/banner.png"  height="200px">
+    </div>
+    
+     
+        <div class="column">
+        <img src="img/cityscape.jpg">
+<!--        <div class="fb-comments" data-href="https://www.facebook.com/adriana.sawyer.90" data-numposts="15"></div>-->
+    </div>
+   <!-- <div class="column">
+        <img src="img/hiking.jpg">
+    </div>-->
+    <div class="column">
+        <img src="img/beach.jpg">
+<!--        <div class="fb-comments" data-href="https://www.facebook.com/adriana.sawyer.90" data-numposts="15"></div>-->
+    </div>
+    <div class="column">
+        <img src="img/hiking.jpg">
+<!--        <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments" data-numposts="15"></div>-->
+    </div>
+    
+    
+    
+    
+    
+    
+        
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Plan a Trip</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <!--<span class="close">&times;</span>-->
+      
+    <div class="row"> 
+    <div class="column">
+        <img src="img/adventure.jpg">
+        <h1>Cliff of Moher</h1>
+        <h3>Avg. Nightly Price <i>$299</i></h3>
+        <p>The Cliffs of Moher are sea cliffs located at the southwestern edge of the Burren region in County Clare, Ireland. They run for about 14 kilometres.</p>
+        
+        
+        
+    </div>
+        <img src="img/fb_comments.png" height="400px">
+    <div class="column" >
+              
+        
+        <h3>Post as Guest<br /></h3>
+        
+        <form method='post' class="column">
+          Name: <input type='text' name='name' id='name' /><br />
+
+          Email: <input type='text' name='email' id='email' /><br />
+
+          <!--Website: <input type='text' name='website' id='website' /><br />-->
+
+          Comment:<br />
+          <textarea name='comment' id='comment'></textarea><br />
+
+          <input type='hidden' name='articleid' id='articleid' value='<? echo $_GET["id"]; ?>' />
+
+          <input type='submit' value='Submit' /> 
+            <!--<input type='reset' value='Cancel' /> -->
+        </form>
+        </div>
+        
+      </div>
+      </div>
+
+</div>
+        
+    
+    
+    
+</body>
+</html>

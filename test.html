@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>
+        Test
+    </title>
+       <link rel="stylesheet" type="text/css" href="flexible_boxlayout.css">
+    <style>
+        .fb_hide_iframes{
+            height: 100%;
+            width: 100%;
+        }
+        </style>
+    <script>
+//      function load() {
+//         var s = document.getElementsByClassName('fb-comments')[0];
+//        s.removeAttribute('class');
+//      }
+//      window.onload = load;
+    </script>
+    </head>
+    <body>
+        <div id="fb-root">
+           
+        </div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';
+          fjs.parentNode.insertBefore(js, fjs);
+                console.log(fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
+        
+         <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-numposts="5"></div>
+        <script>
+          
+        </script>
+    </body>
+</html>
